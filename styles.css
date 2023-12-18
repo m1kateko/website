@@ -1,0 +1,133 @@
+/* Existing CSS rules */
+.body {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+	
+}
+
+.image-container {
+  flex: 1;
+  position: relative;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.professional-background {
+  background-image: url('professional_background2.jpg');
+  position: relative;
+  background-size: cover;
+}
+
+.sports-background {
+  background-image: url('sports_background.jpg');
+  position: relative;
+  background-size: cover;
+}
+
+.background img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  max-width: 200%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.professional-background img {
+  right: 0;
+}
+
+.sports-background img {
+  left: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Initially transparent */
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay color */
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* Prevents the overlay from affecting hover */
+}
+
+.overlay-left {
+  z-index: 1; /* Ensure overlay appears above right image container */
+}
+
+.overlay-right {
+  z-index: 1; /* Ensure overlay appears above left image container */
+}
+
+.professional-intro {
+	width: 40%;
+	padding-left: 15%;
+	padding-bottom: 20%;
+	position: absolute;
+	bottom:0px;
+  	left:0px;
+	
+}
+
+.sports-intro {
+	width: 40%;
+	padding-right: 15%;
+	padding-bottom: 20%;
+	position: absolute;
+	bottom:0px;
+  	right:0px;
+	
+}
+h2 {
+	text-transform:uppercase;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: white;
+	text-shadow: 0 2px black;
+	
+}
+
+.intro p {
+	font-family: "Arial", "sans-serif";
+	color: white;
+	text-shadow: 0 2px black;
+	
+	
+}
+button {
+	border: 2px solid white;
+	background-color: transparent;
+	color: white;
+	font-size: 0.8em;
+	height: 30px; 
+    width: 100px;
+	text-transform:uppercase;
+
+
+	}
+
+button:hover {
+	border: 2px solid white;
+	background-color: white;
+	color: black;
+	font-size: 0.8em;
+	height: 30px; 
+    width: 100px;
+	text-transform:uppercase;
+	}
