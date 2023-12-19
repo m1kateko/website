@@ -9,11 +9,20 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100vh; /* Adjust the height as needed */
+  height: 50vh; /* Adjust the height as needed */
 	margin: 0;
-	padding: 0;
-	
+	padding: 0;	
 }
+
+@media screen and (min-width: 1024px) {
+	.header {
+  height: 100vh; /* Adjust the height as needed */
+}}
+
+@media screen and (orientation: landscape) {
+	.header {
+  height: 100vh; /* Adjust the height as needed */
+}}
 
 .image-container {
   flex: 1;
@@ -81,7 +90,7 @@ body {
 .professional-intro {
 	width: 40%;
 	padding-left: 15%;
-	padding-bottom: 20%;
+	padding-bottom: 10%;
 	position: absolute;
 	bottom:0px;
   	left:0px;
@@ -91,34 +100,112 @@ body {
 .sports-intro {
 	width: 40%;
 	padding-right: 15%;
-	padding-bottom: 20%;
+	padding-bottom: 10%;
 	position: absolute;
 	bottom:0px;
   	right:0px;
+
 	
 }
-h2 {
+
+h1{
+	text-transform:uppercase;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: black;
+	font-size: 5em;
+	text-align: center;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	height: 0px;
+}
+
+/* For tiny screens */
+@media screen and (min-width: 320px) and (max-width: 500px)
+{h2 {
 	text-transform:uppercase;
 	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
 	color: white;
 	text-shadow: 0 2px black;
-	
-}
+	font-size: 135%;
+	}}
 
+/* For mobile screens */
+@media screen and (min-width: 501px) and (max-width: 768px)
+{h2 {
+	text-transform:uppercase;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: white;
+	text-shadow: 0 2px black;
+	font-size: 175%;
+	}}
+
+/* For medium screens */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	h2 {
+	text-transform:uppercase;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: white;
+	text-shadow: 0 2px black;
+	font-size: 220%;
+	}}
+
+/* For larger screens */
+@media screen and (min-width: 1024px) {
+	h2 {
+	text-transform:uppercase;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: white;
+	text-shadow: 0 2px black;
+	font-size: 300%;
+	}}
+
+
+/* For tiny screens */
+@media screen and (min-width: 320px) and (max-width: 500px) {
 .intro p {
 	font-family: "Arial", "sans-serif";
 	color: white;
-	text-shadow: 0 2px black;
-	
-	
+	font-size: 85%;
+	text-shadow: 0 2px black;		
 }
+}
+
+/* For mobile screens */
+@media screen and (min-width: 501px) and (max-width: 768px) {
+.intro p {
+	font-family: "Arial", "sans-serif";
+	color: white;
+	font-size: 100%;
+	text-shadow: 0 2px black;		
+}
+}
+
+/* For medium screens */
+@media screen and (min-width: 769px) and (max-width: 1023px)  {
+	.intro p {
+	font-family: "Arial", "sans-serif";
+	color: white;
+	font-size: 120%;
+	text-shadow: 0 2px black;		
+	}}
+
+
+/* For larger screens */
+@media screen and (min-width: 1024px) {
+	.intro p {
+	font-family: "Arial", "sans-serif";
+	color: white;
+	font-size: 130%;
+	text-shadow: 0 2px black;		
+	}}
+
 button {
 	border: 2px solid white;
 	background-color: transparent;
 	color: white;
-	font-size: 0.8em;
+	font-size: 0.5em;
 	height: 30px; 
-    width: 100px;
+    width: 80px;
 	text-transform:uppercase;
 
 

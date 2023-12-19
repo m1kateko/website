@@ -16,3 +16,4 @@ rightContainer.addEventListener('mouseover', function() {
 rightContainer.addEventListener('mouseout', function() {
   leftContainer.querySelector('.overlay-left').style.opacity = '0';
 });
+
