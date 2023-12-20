@@ -17,3 +17,11 @@ rightContainer.addEventListener('mouseout', function() {
   leftContainer.querySelector('.overlay-left').style.opacity = '0';
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.querySelector('.menu-icon img');
+  const menu = document.querySelector('.menu');
+
+  menuIcon.addEventListener('click', function() {
+    menu.classList.toggle('active');
+  });
+});
