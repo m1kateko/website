@@ -35,3 +35,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('quoteDB.json') // Fetch the JSON file
+    .then(response => response.json()) // Parse the JSON
+    .then(data => {
+      // Get a random index to pick a random quote
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomQuote = data[randomIndex]; // Get the random quote object
+
+      // Update HTML elements with the random quote and author
+      const quoteElement = document.getElementById('quoteItself');
+      const authorElement = document.getElementById('quoteAuthor');
+
+      quoteElement.textContent = randomQuote.quote; // Display the random quote
+      authorElement.textContent = `- ${randomQuote.quoteAuthor}`; // Display the author
+    })
+    .catch(error => console.error('Error fetching quotes:', error));
+});

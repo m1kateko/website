@@ -339,3 +339,67 @@ width: 40%;
 	}
 }
 
+.quoteBlock {
+
+background-color: #d5d8e0;
+text-align: center;
+font-family: "Arial", "sans-serif";
+text-transform: uppercase;
+display:grid
+}
+
+.qotd {
+
+	text-decoration: none;
+	font-size: 0.8em;
+	padding: 0;
+	}
+
+.quoteItself {
+padding: 0;
+text-decoration: none;
+font-size: 1.6em;	
+font-weight: 600;
+color: #4365b4;
+width: 60%;
+margin: 0 auto;
+}
+
+.quoteAuthor {
+	padding: 0;
+	text-decoration: none;
+	font-size: 1em;	
+	font-weight: 300;
+	color: #676c75;
+	}
+
+	/* Sample CSS for footer styling */
+footer {
+	background-color: #f0f0f0; /* Change the background color as needed */
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .social-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .social-icons img {
+	width: 30px; /* Adjust the width of the icons as needed */
+	margin: 0 6px; /* Adjust the spacing between icons */
+  }
+  
+  .footer-site-logo {
+	display: block;
+	margin: 0 auto; /* Center the logo horizontally */
+	width: 20%; /* Adjust the width of the site logo as needed */
+	margin-top: 10px; /* Adjust the space between social icons and site logo */
+  }
+
+  footer p {
+	font-family: "Arial", "sans-serif";
+  }
+  

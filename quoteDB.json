@@ -1,0 +1,32 @@
+[
+	{
+		"quoteNumber" : 1,
+		"quote" : "When you have a dream, you've got to grab it and never let go.",
+		"quoteAuthor" : "Carol Burnett"
+	},
+	{
+		"quoteNumber" : 2,
+		"quote" : "There is nothing impossible to they who will try.",
+		"quoteAuthor" : "Alexander the Great"
+	},
+	{
+		"quoteNumber" : 3,
+		"quote" : "You are never too old to set another goal or to dream a new dream.",
+		"quoteAuthor" : "Malala Yousafzai"
+	},
+	{
+		"quoteNumber" : 4,
+		"quote" : "Your limits, not mine. God's will, not mine.",
+		"quoteAuthor" : "Mikateko Makaringe"
+	},
+	{
+		"quoteNumber" : 5,
+		"quote" : "Belief creates the actual fact.",
+		"quoteAuthor" : "William James"
+	}
+	{
+		"quoteNumber" : 6,
+		"quote" : "They said I wasn't the one, but I thank God that I am.",
+		"quoteAuthor" : "Noah Lyles"
+	}
+]
