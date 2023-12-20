@@ -18,10 +18,20 @@ rightContainer.addEventListener('mouseout', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const menuIcon = document.querySelector('.menu-icon img');
+  const menuIconOpen = document.querySelector('.menu-open-icon');
+  const menuIconClose = document.querySelector('.menu-close-icon');
   const menu = document.querySelector('.menu');
 
-  menuIcon.addEventListener('click', function() {
+  menuIconOpen.addEventListener('click', function() {
     menu.classList.toggle('active');
+    menuIconOpen.style.display = 'none';
+    menuIconClose.style.display = 'block';
+  });
+
+  menuIconClose.addEventListener('click', function() {
+    menu.classList.toggle('active');
+    menuIconClose.style.display = 'none';
+    menuIconOpen.style.display = 'block';
   });
 });
+

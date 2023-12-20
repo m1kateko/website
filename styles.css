@@ -263,6 +263,10 @@ nav {
     display: none;
   }
 
+.menu-close-icon {
+  display: none;
+}
+
 nav .logo img {
 	height: 50px;
 }
