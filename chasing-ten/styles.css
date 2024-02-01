@@ -11,7 +11,7 @@ body {
   width: 100%;
   height: 50vh; /* Adjust the height as needed */
 	margin: 0;
-	padding: 0;	
+	padding-bottom: 10px;	
 }
 
 @media screen and (min-width: 1024px) {
@@ -339,39 +339,6 @@ width: 40%;
 	}
 }
 
-.quoteBlock {
-
-background-color: #d5d8e0;
-text-align: center;
-font-family: "Arial", "sans-serif";
-text-transform: uppercase;
-display:grid
-}
-
-.qotd {
-
-	text-decoration: none;
-	font-size: 0.8em;
-	padding: 0;
-	}
-
-.quoteItself {
-padding: 0;
-text-decoration: none;
-font-size: 1.6em;	
-font-weight: 600;
-color: #4365b4;
-width: 60%;
-margin: 0 auto;
-}
-
-.quoteAuthor {
-	padding: 0;
-	text-decoration: none;
-	font-size: 1em;	
-	font-weight: 300;
-	color: #676c75;
-	}
 
 	/* Sample CSS for footer styling */
 footer {
@@ -411,7 +378,7 @@ opacity: 0.5;
 /* Chasing Ten CSS */
 
 .chasing-ten-background {
-	background-image: url('chasing-ten/chasing-ten-4k.jpg');
+	background-image: url('chasing-ten-4k.jpg');
 	position: relative;
 	background-size: cover;
 	background-position: 50%;
@@ -424,5 +391,151 @@ opacity: 0.5;
 	position: absolute;
 	bottom:0px;
   	left:0px;
-	top: 55%;
+	top: 25%;
   }
+
+  .profile img {
+	max-width: 60%;
+	max-height: 200px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	border-radius: 20px;
+  }
+
+  .profile-name {
+padding: 0;
+text-decoration: none;
+font-size: 1.6em;	
+font-weight: 600;
+color: #4365b4;
+width: 60%;
+margin: 0 auto;
+text-align: center;
+font-family: "Arial", "sans-serif";
+/* text-transform: uppercase; */
+display:grid
+  }
+
+  .profile-role {
+	padding: 0;
+	text-decoration: none;
+	font-size: 0.8em;	
+	font-weight: 600;
+	color: #676c75;
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Arial", "sans-serif";
+	/* text-transform: uppercase; */
+	display:grid
+	  }
+
+
+.profile-box table {
+width: 80%;
+text-align: center;
+}
+
+table {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+  margin-right: auto;
+	
+  }
+
+  /*table, th, td {
+	border: 1px solid;
+	
+  }*/
+
+  .profile-pb {
+	margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
+	text-decoration: none;
+	font-size: 1.6em;
+	font-weight: 600;
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Arial", "sans-serif";
+	/* text-transform: uppercase; */
+	padding-bottom: 5px;
+  }
+
+.profile-box th{
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+.profile-event {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	text-align: left;
+	font-size: 1em;
+	color: #676c75;
+	
+}
+
+.profile-meet {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 0.6em;
+	color: grey;
+}
+
+.countdown {
+	background-color: #d5d8e0;
+	text-align: center;
+	font-family: "Arial", "sans-serif";
+	display:grid;
+}
+
+.timer {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 0px;
+	padding: 0;
+	padding-top: 15px;
+	text-decoration: none;
+	font-size: 1.6em;	
+	font-weight: 600;
+	color: #4365b4;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.countdown-title {
+	text-decoration: none;
+	font-size: 0.8em;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.countdown-message {
+	padding: 0;
+	text-decoration: none;
+	font-size: 1em;	
+	font-weight: 300;
+	color: #676c75;
+}
+
+.countdown-logo {
+	width: 50%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	
+  }
+
+  .profile {
+	max-width: 60%;
+	border: 1px solid #4365b4;
+	margin-left: auto;
+  	margin-right: auto;
+	border-radius: 20px;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

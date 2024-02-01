@@ -52,3 +52,17 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .catch(error => console.error('Error fetching quotes:', error));
 });
+
+
+//
+// Delay the execution of the code to ensure the embedded content is loaded
+setTimeout(function() {
+  // Select the <a> element using a CSS selector
+  var elementToHide = document.querySelector('a[href="https://elfsight.com/instagram-feed-instashow/?utm_source=websites&utm_medium=clients&utm_content=instashow&utm_term=127.0.0.1&utm_campaign=free-widget"][title=""]');
+
+  // Check if the element exists before attempting to hide it
+  if (elementToHide) {
+    // Hide the element by setting its display property to 'none'
+    elementToHide.style.display = 'none !important';
+  }
+}, 2000); // Adjust the delay time (in milliseconds) as needed
