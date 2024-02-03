@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mikateko Makaringe - Official Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -20,84 +20,79 @@
     <ul class="menu">
       <li><a href="/chasing-ten/">Chasing Ten</a></li>
       <li><a href="#athlete">About</a></li>
-      <li><a href="./stats-zone/">Results</a></li>
+      <li><a href="./">Stats Zone</a></li>
       <li><a href="/marketing-miks/">Marketing Miks&nbsp;<i class="fa fa-external-link"></i></a></li>
     </ul>
   </nav>
 </header>
 <div class="header">
   <div class="image-container">
-    <div class="background chasing-ten-background">
+    <div class="background stats-zone-background">
 		<div class="intro chasing-ten-intro">
-      <h2>Chasing Ten</h2>
-			<p>An oath to relentlessly defy the perceived limits of my body, laying it all on the track as I chase 10 seconds.</p>
-		<button>Results</button>
+      <h2>Stats Zone</h2>
+			<p>A hub to view my personal records, results and progression in my bid for continuous improvement.</p>
+		<a href="#results"><button>Results</button></a>
     </div>
 		</div>
   </div>
 </div>
 <div class="ten-headings">
-  <h1>Why Ten?</h1>
-  <p>I’m running for my life. No really, I'm literally running for my life.
-  </p>
-  <p>I’ve always known that I’m most optimal when I’m in my physical element but I feel most alive when I'm running.
-  </p>
-  <p>I need not only be active but my body is begging for me to be explosive.
-  </p>
-  <p>It comes from within.
-  </p>
-  <p>Chasing Ten allows me to take my body to a place it's never been before.
-  </p>
-  <p>Winning matters of course. But it won't just fall in my lap, I have to chase it.
-  </p>
-  <p>I’m aiming to do the 100m in 10 seconds. Further to that, I’ll be gunning to do the 200m in 20 seconds.
-  </p>
-  <p>However long it takes. This is my pledge.
-  </p>
   
-
-</div>
-
-<div class="profile">
-  <img src="mika-headshot-id.jpg">
-
-<p class="profile-name">Mikateko Makaringe</p>
-<p class="profile-role">Personal Bests</p>
-<div class="profile-box">
-  <table>
-    <tbody>
-      <tr>
-        <td class="profile-pb" rowspan="2">11.10</td>
-        <td class="profile-event">100m</td>
-      </tr>
-      <tr>
-        <td class="profile-meet" >Parow - 30 Sep 2023</td>
-      </tr>
-     
-    </tbody>
-    </table>
-
+  <h3>Records</h3>
+  <div class="profile">
+    <img src="mika-headshot-id.jpg">
+  
+  <p class="profile-name">Mikateko Makaringe</p>
+  <p class="profile-role">Personal Bests</p>
+  <div class="profile-box">
     <table>
       <tbody>
         <tr>
-          <td class="profile-pb" rowspan="2">22.99</td>
-          <td class="profile-event">200m</td>
+          <td class="profile-pb" rowspan="2">11.10</td>
+          <td class="profile-event">100m</td>
         </tr>
         <tr>
-          <td class="profile-meet">Parow - 30 Sep 2023</td>
+          <td class="profile-meet" >Parow - 28 Oct 2023</td>
         </tr>
+       
       </tbody>
       </table>
-      <div>
-      <button class="profile-inside">Stats and Results</button>
-    </div>
+      <table>
+        <tbody>
+          <tr>
+            <td class="profile-pb" rowspan="2">16.81</td>
+            <td class="profile-event">150m</td>
+          </tr>
+          <tr>
+            <td class="profile-meet">Parow - 25 Nov 2023</td>
+          </tr>
+        </tbody>
+        </table>
+      <table>
+        <tbody>
+          <tr>
+            <td class="profile-pb" rowspan="2">22.99</td>
+            <td class="profile-event">200m</td>
+          </tr>
+          <tr>
+            <td class="profile-meet">Parow - 28 Oct 2023</td>
+          </tr>
+        </tbody>
+        </table>  
+  </div>
+  </div>
 </div>
 
+<div class="filter-container">
+  <label for="filterSelect">Results In: </label>
+  <!-- Filter select will be dynamically added here by JavaScript -->
 </div>
-<div class="elfsight">
-  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-  <div class="elfsight-app-a3fa9b3b-f710-4cbc-b187-f36806514bd4" data-elfsight-app-lazy></div>
+
+<div id="results">
+  <!-- Table results will be dynamically added here by JavaScript -->
 </div>
+
+
 <div class="countdown">
   <p class="countdown-title" id="countdown-title">Days to Tokyo 2025</p>
   <img class="countdown-logo" src="World_Athletics_logo.png">
