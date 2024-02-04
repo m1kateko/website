@@ -66,3 +66,16 @@ setTimeout(function() {
     elementToHide.style.display = 'none !important';
   }
 }, 2000); // Adjust the delay time (in milliseconds) as needed
+
+function toggleReadMore() {
+  var jobDescription = document.getElementById("job-description");
+  var jobList = document.querySelector(".text-box ul");
+
+  if (jobDescription.style.display === "none" || jobDescription.style.display === "") {
+    jobDescription.style.display = "block";
+    jobList.style.display = "block";
+  } else {
+    jobDescription.style.display = "none";
+    jobList.style.display = "none";
+  }
+}

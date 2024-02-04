@@ -274,6 +274,8 @@ nav .logo img {
 .menu li {
   margin-right: 20px;
 	font-family: "Arial", "sans-serif";
+	font-size: 0.9em;
+
 
 }
 
@@ -301,7 +303,7 @@ background: #4365b4;
   position: fixed;
   top: 64px; /* Adjust based on your header's height */
   background-color: #fff; /* Change this to your preferred background color */
-width: 40%;
+width: 50%;
   transition: transform 0.3s ease-in-out;
   z-index: 1000; /* Ensure menu is above other content */
 	 align-items: flex-end;
