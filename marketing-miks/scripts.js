@@ -44,3 +44,20 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "Gunning for gold";
   }
 }, 1000);
+
+// scripts.js
+
+function toggleReadMore(index) {
+  var jobContainer = document.getElementById('job-container-' + index);
+  var readMoreButton = document.getElementsByClassName('open-read-more')[index];
+
+  if (jobContainer.classList.contains('hidden')) {
+    // If job container is hidden, show it and change button text to up arrow
+    jobContainer.classList.remove('hidden');
+    readMoreButton.innerHTML = '&uarr;';
+  } else {
+    // If job container is visible, hide it and change button text to down arrow
+    jobContainer.classList.add('hidden');
+    readMoreButton.innerHTML = '&darr;';
+  }
+}

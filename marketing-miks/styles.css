@@ -274,6 +274,7 @@ nav .logo img {
 .menu li {
   margin-right: 20px;
 	font-family: "Arial", "sans-serif";
+	font-size: 0.9em;
 
 }
 
@@ -1038,4 +1039,30 @@ h1 {
 	margin: auto;
 	position: relative;
 
+}
+
+@media only screen and (max-width: 600px) {
+	
+	.open-read-more {
+		border-color: none;
+		color: lightgray;
+		font-size: large;
+		text-align: center; /* Corrected spelling */
+		height: 30px;
+		width: 10px;
+		display: block;;
+	}
+
+	.open-read-more:hover {
+		border-color: none;
+		color: gray;
+		font-size: large;
+		text-align: center; /* Corrected spelling */
+		height: 30px;
+		width: 10px;
+	}
+
+	.hidden {
+		display: none; /* Moved inside the media query */
+	}
 }

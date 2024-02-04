@@ -163,8 +163,6 @@ h1{
 
 /* For tiny screens */
 @media screen and (min-width: 320px) and (max-width: 500px) {
-	
-	
 
 .intro p {
 	font-family: "Arial", "sans-serif";
@@ -220,7 +218,11 @@ button {
 	border: 2px solid white;
 	background-color: transparent;
 	color: white;
-	font-size: 0.5em;
+	font-size: 0.8em;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-left: 6px;
 	height: 30px; 
     width: 80px;
 	text-transform:uppercase;
@@ -234,7 +236,7 @@ button:hover {
 	color: black;
 	font-size: 0.8em;
 	height: 30px; 
-    width: 100px;
+    width: 80px;
 	text-transform:uppercase;
 	}
 
@@ -274,6 +276,7 @@ nav .logo img {
 .menu li {
   margin-right: 20px;
 	font-family: "Arial", "sans-serif";
+	font-size: 0.9em;
 
 }
 
@@ -301,7 +304,7 @@ background: #fff;
   position: fixed;
   top: 64px; /* Adjust based on your header's height */
   background-color: #4365b4; /* Change this to your preferred background color */
-width: 40%;
+width: 50%;
   transition: transform 0.3s ease-in-out;
   z-index: 1000; /* Ensure menu is above other content */
 	 align-items: flex-end;
@@ -389,8 +392,8 @@ opacity: 0.5;
 	padding-left: 10%;
 	padding-bottom: 10%;
 	position: absolute;
-	bottom:0px;
-  	left:0px;
+	bottom: 0;
+  	left:0;
 	top: 25%;
   }
 
@@ -663,10 +666,364 @@ h3 {
 	text-transform:uppercase;
 	}
 
+
+	/* For teeny screens */
+@media screen and (min-width: 279px) and (max-width: 379px)
+{
+
+	.chasing-ten-intro{
+		width: 40%;
+		padding-left: 10%;
+		padding-bottom: 10%;
+		position: absolute;
+		bottom: 0;
+		left:0;
+		top: 35%;
+		
+	}
+
+	.chasing-ten-intro h2{
+		font-size: 145%;
+		text-shadow: 2px 2px 2px black;
+		padding-bottom: 0px;
+		margin-bottom: 2px;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		color: #fff;
+		
+
+	}
+	.chasing-ten-intro p {
+		font-family: "Arial", "sans-serif";
+		color: white;
+		font-size: 85%;
+		text-shadow: 2px 2px 2px black;
+		padding-top: 0px;
+		margin-top: 5px;
+}
+
+.chasing-ten-intro button {
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	font-size: 0.6em;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-left: 6px;
+	height: 30px; 
+	width: 60%;
+	text-transform:uppercase;
+	}
+
+	.chasing-ten-intro button:hover {
+	border: 2px solid white;
+	background-color: white;
+	color: black;
+	font-size: 0.6em;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-left: 6px;
+	height: 30px; 
+	width: 60%;
+	text-transform:uppercase;
+	}
+
+}
+
+	/* For tiny screens */
+@media screen and (min-width: 380px) and (max-width: 500px)
+{
+
+	.chasing-ten-intro{
+		width: 40%;
+		padding-left: 10%;
+		padding-bottom: 10%;
+		position: absolute;
+		bottom: 0;
+		left:0;
+		top: 40%;
+	}
+
+	.chasing-ten-intro h2{
+		font-size: 160%;
+		text-shadow: 2px 2px 2px black;
+		padding-bottom: 0px;
+		margin-bottom: 2px;
+
+	}
+	.chasing-ten-intro p {
+		font-family: "Arial", "sans-serif";
+		color: white;
+		font-size: 100%;
+		text-shadow: 2px 2px 2px black;
+		padding-top: 0px;
+		margin-top: 5px;
+	}
+	.chasing-ten-intro button {
+		border: 1px solid white;
+		background-color: transparent;
+		color: white;
+		font-size: 0.8em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 60%;
+		text-transform:uppercase;
+		}
+	
+		.chasing-ten-intro button:hover {
+		border: 2px solid white;
+		background-color: white;
+		color: black;
+		font-size: 0.8em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 60%;
+		text-transform:uppercase;
+		}
+}
+
+
+/* For small screens */
+@media screen and (min-width: 501px) and (max-width: 768px)
+{
+	.chasing-ten-intro{
+		width: 40%;
+		padding-left: 10%;
+		padding-bottom: 10%;
+		position: absolute;
+		bottom: 0;
+		left:0;
+		top: 30%;
+	}
+
+	.chasing-ten-intro h2{
+		font-size: 210%;
+		text-shadow: 2px 2px 2px black;
+		padding-bottom: 0px;
+		margin-bottom: 2px;
+
+	}
+	.chasing-ten-intro p {
+		font-family: "Arial", "sans-serif";
+		color: white;
+		font-size: 130%;
+		text-shadow: 2px 2px 2px black;
+		padding-top: 0px;
+		margin-top: 5px;
+	}
+	.chasing-ten-intro button {
+		border: 1px solid white;
+		background-color: transparent;
+		color: white;
+		font-size: 0.8em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 40%;
+		text-transform:uppercase;
+		}
+	
+		.chasing-ten-intro button:hover {
+		border: 2px solid white;
+		background-color: white;
+		color: black;
+		font-size: 0.8em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 40%;
+		text-transform:uppercase;
+		}
+}
+
+
+/* For medium screens */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    
+		.chasing-ten-intro{
+			width: 40%;
+			padding-left: 10%;
+			padding-bottom: 10%;
+			position: absolute;
+			bottom: 0;
+			left:0;
+			top: 37%;
+		}
+	
+		.chasing-ten-intro h2{
+			font-size: 240%;
+			text-shadow: 2px 2px 2px black;
+			padding-bottom: 0px;
+			margin-bottom: 2px;
+	
+		}
+		.chasing-ten-intro p {
+			font-family: "Arial", "sans-serif";
+			color: white;
+			font-size: 140%;
+			text-shadow: 2px 2px 2px black;
+			padding-top: 0px;
+			margin-top: 5px;
+		}
+		.chasing-ten-intro button {
+			border: 1px solid white;
+			background-color: transparent;
+			color: white;
+			font-size: 0.8em;
+			padding-bottom: 6px;
+			padding-top: 6px;
+			padding-right: 6px;
+			padding-left: 6px;
+			height: 30px; 
+			width: 40%;
+			text-transform:uppercase;
+			}
+		
+			.chasing-ten-intro button:hover {
+			border: 2px solid white;
+			background-color: white;
+			color: black;
+			font-size: 0.8em;
+			padding-bottom: 6px;
+			padding-top: 6px;
+			padding-right: 6px;
+			padding-left: 6px;
+			height: 30px; 
+			width: 40%;
+			text-transform:uppercase;
+			}
+}
+
+/* For larger screens */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+	.chasing-ten-intro{
+		width: 40%;
+		padding-left: 10%;
+		padding-bottom: 10%;
+		position: absolute;
+		bottom: 0;
+		left:0;
+		top: 50%;
+	}
+
+	.chasing-ten-intro h2{
+		font-size: 280%;
+		text-shadow: 2px 2px 2px black;
+		padding-bottom: 0px;
+		margin-bottom: 2px;
+
+	}
+	.chasing-ten-intro p {
+		font-family: "Arial", "sans-serif";
+		color: white;
+		font-size: 140%;
+		text-shadow: 2px 2px 2px black;
+		padding-top: 0px;
+		margin-top: 5px;
+	}
+	.chasing-ten-intro button {
+		border: 1px solid white;
+		background-color: transparent;
+		color: white;
+		font-size: 1em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 30%;
+		text-transform:uppercase;
+		}
+	
+		.chasing-ten-intro button:hover {
+		border: 2px solid white;
+		background-color: white;
+		color: black;
+		font-size: 1em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 30%;
+		text-transform:uppercase;
+		}
+
+}
+
+/* For much larger screens */
+@media screen and (min-width: 1440px) {
+
+	.chasing-ten-intro{
+		width: 40%;
+		padding-left: 10%;
+		padding-bottom: 10%;
+		position: absolute;
+		bottom: 0;
+		left:0;
+		top: 50%;
+	}
+
+	.chasing-ten-intro h2{
+		font-size: 340%;
+		text-shadow: 2px 2px 2px black;
+		padding-bottom: 0px;
+		margin-bottom: 2px;
+
+	}
+	.chasing-ten-intro p {
+		font-family: "Arial", "sans-serif";
+		color: white;
+		font-size: 180%;
+		text-shadow: 2px 2px 2px black;
+		padding-top: 0px;
+		margin-top: 5px;
+	}
+	.chasing-ten-intro button {
+		border: 1px solid white;
+		background-color: transparent;
+		color: white;
+		font-size: 1em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 30%;
+		text-transform:uppercase;
+		}
+	
+		.chasing-ten-intro button:hover {
+		border: 2px solid white;
+		background-color: white;
+		color: black;
+		font-size: 1em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 30%;
+		text-transform:uppercase;
+		}
+
+}
 	/* Stats Zone CSS */
 
 .stats-zone-background {
-	background-image: url('/chasing-ten/stats-zone/maks-profile.jpg');
+	background-image: url('stats-zone/maks-profile.jpg');
 	position: relative;
 	background-size: cover;
 	background-position: 50%;
