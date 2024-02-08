@@ -14,6 +14,38 @@ body {
 	padding-bottom: 0px;	
 }
 
+h2 {
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+	text-transform:uppercase;
+}
+
+table {
+	font-family: 'Montserrat', sans-serif;	
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.menu {
+	font-family: 'Montserrat', sans-serif;
+}
+
+label, .filter-select {
+	font-family: 'Montserrat', sans-serif;	
+}
+
 @media screen and (min-width: 1024px) {
 	.header {
   height: 90vh; /* Adjust the height as needed */
@@ -36,17 +68,6 @@ body {
   overflow: hidden;
 }
 
-.professional-background {
-  background-image: url('professional_background2.jpg');
-  position: relative;
-  background-size: cover;
-}
-
-.sports-background {
-  background-image: url('sports_background.jpg');
-  position: relative;
-  background-size: cover;
-}
 
 .background img {
   position: absolute;
@@ -59,59 +80,9 @@ body {
   pointer-events: none;
 }
 
-.professional-background img {
-  right: 0;
-}
-
-.sports-background img {
-  left: 0;
-}
-
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0; /* Initially transparent */
-  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay color */
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* Prevents the overlay from affecting hover */
-}
-
-.overlay-left {
-  z-index: 1; /* Ensure overlay appears above right image container */
-}
-
-.overlay-right {
-  z-index: 1; /* Ensure overlay appears above left image container */
-}
-
-.professional-intro {
-	width: 40%;
-	padding-left: 15%;
-	padding-bottom: 10%;
-	position: absolute;
-	bottom:0px;
-  	left:0px;
-	
-}
-
-.sports-intro {
-	width: 40%;
-	padding-right: 15%;
-	padding-bottom: 10%;
-	position: absolute;
-	bottom:0px;
-  	right:0px;
-
-	
-}
-
 h1{
 	text-transform:uppercase;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-family: 'Bebas Neue', sans-serif;
 	color: black;
 	font-size: 5em;
 	text-align: center;
@@ -120,99 +91,7 @@ h1{
 	height: 0px;
 }
 
-/* For tiny screens */
-@media screen and (min-width: 320px) and (max-width: 500px)
-{h2 {
-	text-transform:uppercase;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
-	color: white;
-	text-shadow: 0 2px black;
-	font-size: 125%;
-	}}
 
-/* For mobile screens */
-@media screen and (min-width: 501px) and (max-width: 768px)
-{h2 {
-	text-transform:uppercase;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
-	color: white;
-	text-shadow: 0 2px black;
-	font-size: 175%;
-	}}
-
-/* For medium screens */
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-	h2 {
-	text-transform:uppercase;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
-	color: white;
-	text-shadow: 0 2px black;
-	font-size: 220%;
-	}}
-
-/* For larger screens */
-@media screen and (min-width: 1024px) {
-	h2 {
-	text-transform:uppercase;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
-	color: white;
-	text-shadow: 0 2px black;
-	font-size: 300%;
-	}}
-
-
-/* For tiny screens */
-@media screen and (min-width: 320px) and (max-width: 500px) {
-
-.intro p {
-	font-family: "Arial", "sans-serif";
-	color: white;
-	font-size: 75%;
-	text-shadow: 0 2px black;		
-}
-}
-
-/* For mobile screens */
-@media screen and (min-width: 501px) and (max-width: 696px) {
-	
-	.intro{
-	top: 10%;
-}
-.intro p {
-	font-family: "Arial", "sans-serif";
-	color: white;
-	font-size: 85%;
-	text-shadow: 0 2px black;		
-}
-}
-
-/* For medium screens */
-@media screen and (min-width: 697px) and (max-width: 1023px)  {
-	
-	.intro{
-	top: 5%;
-	}
-	
-	.intro p {
-	font-family: "Arial", "sans-serif";
-	color: white;
-	font-size: 120%;
-	text-shadow: 0 2px black;		
-	}}
-
-
-/* For larger screens */
-@media screen and (min-width: 1024px) {
-	
-	.intro{
-	top: 20%;
-}
-	.intro p {
-	font-family: "Arial", "sans-serif";
-	color: white;
-	font-size: 130%;
-	text-shadow: 0 2px black;		
-	}}
 
 button {
 	border: 2px solid white;
@@ -226,8 +105,6 @@ button {
 	height: 30px; 
     width: 80px;
 	text-transform:uppercase;
-
-
 	}
 
 button:hover {
@@ -275,8 +152,7 @@ nav .logo img {
 
 .menu li {
   margin-right: 20px;
-	font-family: "Arial", "sans-serif";
-	font-size: 0.9em;
+font-size: 0.9em;
 
 }
 
@@ -302,9 +178,9 @@ background: #fff;
   display: none;
   /* Additional styles for sliding effect */
   position: fixed;
-  top: 64px; /* Adjust based on your header's height */
+  top: 63px; /* Adjust based on your header's height */
   background-color: #4365b4; /* Change this to your preferred background color */
-width: 50%;
+width: 40%;
   transition: transform 0.3s ease-in-out;
   z-index: 1000; /* Ensure menu is above other content */
 	 align-items: flex-end;
@@ -336,10 +212,13 @@ width: 50%;
 	.menu li {
     margin: 5px 0; /* Add margin to create space between items */
     padding: 5px; /* Add padding for internal spacing */
+	
+
   }
 	.menu {
 		padding-bottom: 10px;
 	}
+
 }
 
 
@@ -370,7 +249,6 @@ footer {
   }
 
   footer p {
-	font-family: "Arial", "sans-serif";
 	color: #fff;
   }
 
@@ -397,7 +275,13 @@ opacity: 0.5;
 	top: 25%;
   }
 
-  
+  .chasing-ten-intro h2{
+	color: #fff;
+  }
+
+  .profile{
+	font-family: 'Montserrat', sans-serif;
+  }
 
   .profile img {
 	max-width: 60%;
@@ -417,7 +301,6 @@ color: #4365b4;
 margin: auto;
 text-align: center;
 align-content: center;
-font-family: "Arial", "sans-serif";
 /* text-transform: uppercase; */
 display:grid;
   }
@@ -431,7 +314,6 @@ display:grid;
 	width: 60%;
 	margin: 0 auto;
 	text-align: center;
-	font-family: "Arial", "sans-serif";
 	/* text-transform: uppercase; */
 	display:grid
 	  }
@@ -463,18 +345,14 @@ table {
 	width: 60%;
 	margin: 0 auto;
 	text-align: center;
-	font-family: "Arial", "sans-serif";
+	font-family: 'Montserrat', sans-serif;
 	/* text-transform: uppercase; */
 	padding-bottom: 5px;
   }
 
-.profile-box th{
-	font-family: Arial, Helvetica, sans-serif;
-	
-}
+
 
 .profile-event {
-	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 500;
 	text-align: left;
 	font-size: 1em;
@@ -483,7 +361,6 @@ table {
 }
 
 .profile-meet {
-	font-family: Arial, Helvetica, sans-serif;
 	text-align: left;
 	font-size: 0.6em;
 	color: grey;
@@ -492,18 +369,17 @@ table {
 .countdown {
 	background-color: #d5d8e0;
 	text-align: center;
-	font-family: "Arial", "sans-serif";
 	display:grid;
 }
 
 .timer {
-	font-family: Arial, Helvetica, sans-serif;
+
 	text-align: center;
 	margin-top: 0px;
 	padding: 0;
 	padding-top: 15px;
 	text-decoration: none;
-	font-size: 3em;	
+	font-size: 2em;	
 	font-weight: 600;
 	color: #4365b4;
 	width: 60%;
@@ -512,7 +388,7 @@ table {
 
 .countdown-title {
 	text-decoration: none;
-	font-size: 2em;
+	font-size: 1.3em;
 	padding: 0;
 	text-transform: uppercase;
 }
@@ -526,7 +402,7 @@ table {
 }
 
 .countdown-logo {
-	width: 20%;
+	width: 30%;
 	display: block;
   	margin-left: auto;
   	margin-right: auto;	
@@ -537,18 +413,16 @@ table {
 	.countdown {
 		background-color: #d5d8e0;
 		text-align: center;
-		font-family: "Arial", "sans-serif";
 		display:grid;
 	}
 	
 	.timer {
-		font-family: Arial, Helvetica, sans-serif;
 		text-align: center;
 		margin-top: 0px;
 		padding: 0;
 		padding-top: 15px;
 		text-decoration: none;
-		font-size: 1em;	
+		font-size: 1.2em;	
 		font-weight: 600;
 		color: #4365b4;
 		width: 60%;
@@ -610,34 +484,32 @@ h3 {
 	text-align: center;
 	position: relative;
 	display: contents;
-	font-family: 'Poppins', sans-serif;
 	font-size: 1.4em;	
 }
 
 .ten-headings h1 {
 	padding-top: 2%;
 	padding-bottom: 2%;
-	width: 50%;
 	margin: 0 auto;
 	align-items: center;
 	color: #4365b4;
 	text-align: center;
 	position: relative;
 	display: contents;
-	font-family: 'Poppins', sans-serif;
 	font-size: 3em;
 }
 
 .ten-headings p {
+	padding-left: 20%;
+	padding-right: 20%;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	width: 50%;
 	margin: 0 auto;
 	align-items: center;
-	color: #3a3c3e;
 	text-align: center;
 	position: relative;
-	font-family: 'Poppins', sans-serif;
+
+
 }
 
 .profile-inside {
@@ -646,25 +518,34 @@ h3 {
 	color: #4365b4;
 	font-size: 0.6em;
 	height: 30px; 
-    width: fit-content;
-	text-transform:uppercase;
+	width: fit-content;
+	text-transform: uppercase;
 	margin: 0 auto;
 	align-items: center;
 	display: flex;
 	margin-bottom: 10px;
 	padding: 8px;
-	}
-
-.profile-inside:hover {
+	text-decoration: none; /* Add this line to remove underline */
+  }
+  
+  .profile-inside a {
+	text-decoration: none; /* Add this line to remove underline */
+  }
+  
+  .profile-inside:hover {
 	position: inherit;
 	border: 2px solid #4365b4;
 	background-color: #4365b4;
 	color: #fff;
 	font-size: 0.6em;
 	height: 30px; 
-    width: fit-content;
-	text-transform:uppercase;
-	}
+	width: fit-content;
+	text-transform: uppercase;
+  }
+
+  
+  
+  
 
 
 	/* For teeny screens */
@@ -683,19 +564,17 @@ h3 {
 	}
 
 	.chasing-ten-intro h2{
-		font-size: 145%;
+		font-size: 165%;
 		text-shadow: 2px 2px 2px black;
 		padding-bottom: 0px;
 		margin-bottom: 2px;
-		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 		color: #fff;
 		
 
 	}
 	.chasing-ten-intro p {
-		font-family: "Arial", "sans-serif";
 		color: white;
-		font-size: 85%;
+		font-size: 75%;
 		text-shadow: 2px 2px 2px black;
 		padding-top: 0px;
 		margin-top: 5px;
@@ -753,7 +632,6 @@ h3 {
 
 	}
 	.chasing-ten-intro p {
-		font-family: "Arial", "sans-serif";
 		color: white;
 		font-size: 100%;
 		text-shadow: 2px 2px 2px black;
@@ -762,6 +640,7 @@ h3 {
 	}
 	.chasing-ten-intro button {
 		border: 1px solid white;
+		font-family: 'Montserrat', sans-serif;
 		background-color: transparent;
 		color: white;
 		font-size: 0.8em;
@@ -811,18 +690,18 @@ h3 {
 
 	}
 	.chasing-ten-intro p {
-		font-family: "Arial", "sans-serif";
 		color: white;
-		font-size: 130%;
+		font-size: 100%;
 		text-shadow: 2px 2px 2px black;
 		padding-top: 0px;
 		margin-top: 5px;
 	}
 	.chasing-ten-intro button {
+		font-family: 'Montserrat', sans-serif;
 		border: 1px solid white;
 		background-color: transparent;
 		color: white;
-		font-size: 0.8em;
+		font-size: 80%;
 		padding-bottom: 6px;
 		padding-top: 6px;
 		padding-right: 6px;
@@ -836,7 +715,6 @@ h3 {
 		border: 2px solid white;
 		background-color: white;
 		color: black;
-		font-size: 0.8em;
 		padding-bottom: 6px;
 		padding-top: 6px;
 		padding-right: 6px;
@@ -869,7 +747,6 @@ h3 {
 	
 		}
 		.chasing-ten-intro p {
-			font-family: "Arial", "sans-serif";
 			color: white;
 			font-size: 140%;
 			text-shadow: 2px 2px 2px black;
@@ -878,6 +755,7 @@ h3 {
 		}
 		.chasing-ten-intro button {
 			border: 1px solid white;
+			font-family: 'Montserrat', sans-serif;
 			background-color: transparent;
 			color: white;
 			font-size: 0.8em;
@@ -894,7 +772,6 @@ h3 {
 			border: 2px solid white;
 			background-color: white;
 			color: black;
-			font-size: 0.8em;
 			padding-bottom: 6px;
 			padding-top: 6px;
 			padding-right: 6px;
@@ -926,7 +803,6 @@ h3 {
 
 	}
 	.chasing-ten-intro p {
-		font-family: "Arial", "sans-serif";
 		color: white;
 		font-size: 140%;
 		text-shadow: 2px 2px 2px black;
@@ -935,6 +811,7 @@ h3 {
 	}
 	.chasing-ten-intro button {
 		border: 1px solid white;
+		font-family: 'Montserrat', sans-serif;
 		background-color: transparent;
 		color: white;
 		font-size: 1em;
@@ -951,7 +828,6 @@ h3 {
 		border: 2px solid white;
 		background-color: white;
 		color: black;
-		font-size: 1em;
 		padding-bottom: 6px;
 		padding-top: 6px;
 		padding-right: 6px;
@@ -984,7 +860,6 @@ h3 {
 
 	}
 	.chasing-ten-intro p {
-		font-family: "Arial", "sans-serif";
 		color: white;
 		font-size: 180%;
 		text-shadow: 2px 2px 2px black;
@@ -993,6 +868,7 @@ h3 {
 	}
 	.chasing-ten-intro button {
 		border: 1px solid white;
+		font-family: 'Montserrat', sans-serif;
 		background-color: transparent;
 		color: white;
 		font-size: 1em;
@@ -1009,7 +885,6 @@ h3 {
 		border: 2px solid white;
 		background-color: white;
 		color: black;
-		font-size: 1em;
 		padding-bottom: 6px;
 		padding-top: 6px;
 		padding-right: 6px;
@@ -1019,6 +894,10 @@ h3 {
 		text-transform:uppercase;
 		}
 
+}
+
+.profile-name p {
+	color:#4365b4;
 }
 	/* Stats Zone CSS */
 
@@ -1060,7 +939,6 @@ display: block;
 
 .filter-container label {
 	font-size: 15px;
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	font-weight: bold;
 	color: #333;
@@ -1072,7 +950,6 @@ display: block;
 .stats-zone-table{
 	padding-top: 0px;
 	padding-bottom: 50px;
-	font-family:Arial, Helvetica, sans-serif;
 	overflow-x: auto;
 	text-align: left;
 	
@@ -1120,7 +997,6 @@ display: block;
   
  /* Media Query for smaller screens */
 @media only screen and (max-width: 600px) {
-
 	
 	th, td {
 	  font-size: 14px;
@@ -1129,4 +1005,3 @@ display: block;
 	  font-size: 1em;
 	}
   }
-
