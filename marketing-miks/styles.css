@@ -14,6 +14,38 @@ body {
 	
 }
 
+h1, h2 {
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p, li {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+	text-transform:uppercase;
+}
+
+table {
+	font-family: 'Montserrat', sans-serif;	
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.menu {
+	font-family: 'Montserrat', sans-serif;
+}
+
+label, .filter-select {
+	font-family: 'Montserrat', sans-serif;	
+}
+
 @media screen and (min-width: 1024px) {
 	.header {
   height: 90vh; /* Adjust the height as needed */
@@ -36,18 +68,6 @@ body {
   overflow: hidden;
 }
 
-.professional-background {
-  background-image: url('professional_background2.jpg');
-  position: relative;
-  background-size: cover;
-}
-
-.sports-background {
-  background-image: url('sports_background.jpg');
-  position: relative;
-  background-size: cover;
-}
-
 .background img {
   position: absolute;
   top: 50%;
@@ -59,59 +79,8 @@ body {
   pointer-events: none;
 }
 
-.professional-background img {
-  right: 0;
-}
-
-.sports-background img {
-  left: 0;
-}
-
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0; /* Initially transparent */
-  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay color */
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* Prevents the overlay from affecting hover */
-}
-
-.overlay-left {
-  z-index: 1; /* Ensure overlay appears above right image container */
-}
-
-.overlay-right {
-  z-index: 1; /* Ensure overlay appears above left image container */
-}
-
-.professional-intro {
-	width: 40%;
-	padding-left: 15%;
-	padding-bottom: 10%;
-	position: absolute;
-	bottom:0px;
-  	left:0px;
-	
-}
-
-.sports-intro {
-	width: 40%;
-	padding-right: 15%;
-	padding-bottom: 10%;
-	position: absolute;
-	bottom:0px;
-  	right:0px;
-
-	
-}
-
 h1{
 	text-transform:uppercase;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
 	color: black;
 	font-size: 5em;
 	text-align: center;
@@ -120,101 +89,6 @@ h1{
 	height: 0px;
 }
 
-/* For tiny screens */
-@media screen and (min-width: 320px) and (max-width: 500px)
-{h2 {
-	text-transform:uppercase;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
-	color: white;
-	text-shadow: 0 2px black;
-	font-size: 125%;
-	}}
-
-/* For mobile screens */
-@media screen and (min-width: 501px) and (max-width: 768px)
-{h2 {
-	text-transform:uppercase;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
-	color: white;
-	text-shadow: 0 2px black;
-	font-size: 175%;
-	}}
-
-/* For medium screens */
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-	h2 {
-	text-transform:uppercase;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
-	color: white;
-	text-shadow: 0 2px black;
-	font-size: 220%;
-	}}
-
-/* For larger screens */
-@media screen and (min-width: 1024px) {
-	h2 {
-	text-transform:uppercase;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
-	color: white;
-	text-shadow: 0 2px black;
-	font-size: 300%;
-	}}
-
-
-/* For tiny screens */
-@media screen and (min-width: 320px) and (max-width: 500px) {
-	
-	
-
-.intro p {
-	font-family: "Arial", "sans-serif";
-	color: white;
-	font-size: 75%;
-	text-shadow: 0 2px black;		
-}
-}
-
-/* For mobile screens */
-@media screen and (min-width: 501px) and (max-width: 696px) {
-	
-	.intro{
-	top: 10%;
-}
-.intro p {
-	font-family: "Arial", "sans-serif";
-	color: white;
-	font-size: 85%;
-	text-shadow: 0 2px black;		
-}
-}
-
-/* For medium screens */
-@media screen and (min-width: 697px) and (max-width: 1023px)  {
-	
-	.intro{
-	top: 5%;
-	}
-	
-	.intro p {
-	font-family: "Arial", "sans-serif";
-	color: white;
-	font-size: 120%;
-	text-shadow: 0 2px black;		
-	}}
-
-
-/* For larger screens */
-@media screen and (min-width: 1024px) {
-	
-	.intro{
-	top: 20%;
-}
-	.intro p {
-	font-family: "Arial", "sans-serif";
-	color: white;
-	font-size: 130%;
-	text-shadow: 0 2px black;		
-	}}
 
 button {
 	border: 2px solid white;
@@ -232,10 +106,6 @@ button:hover {
 	border: 2px solid white;
 	background-color: white;
 	color: black;
-	font-size: 0.8em;
-	height: 30px; 
-    width: 100px;
-	text-transform:uppercase;
 	}
 
 /* Navbar styles */
@@ -273,7 +143,6 @@ nav .logo img {
 
 .menu li {
   margin-right: 20px;
-	font-family: "Arial", "sans-serif";
 	font-size: 0.9em;
 
 }
@@ -302,7 +171,7 @@ background: #fff;
   position: fixed;
   top: 63px; /* Adjust based on your header's height */
   background-color: #676c75; /* Change this to your preferred background color */
-width: 50%;
+width: 40%;
   transition: transform 0.3s ease-in-out;
   z-index: 1000; /* Ensure menu is above other content */
 	 align-items: flex-end;
@@ -368,7 +237,6 @@ footer {
   }
 
   footer p {
-	font-family: "Arial", "sans-serif";
 	color: #fff;
   }
 
@@ -402,153 +270,362 @@ opacity: 0.5;
 	top: 25%;
   }
 
-  .profile img {
-	max-width: 60%;
-	max-height: 200px;
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-	border-radius: 20px;
-  }
-
-  .profile-name {
-padding: 0;
-text-decoration: none;
-font-size: 1.6em;	
-font-weight: 600;
-color: #4365b4;
-width: 60%;
-margin: 0 auto;
-text-align: center;
-font-family: "Arial", "sans-serif";
-/* text-transform: uppercase; */
-display:grid
-  }
-
-  .profile-role {
-	padding: 0;
-	text-decoration: none;
-	font-size: 0.8em;	
-	font-weight: 600;
-	color: #676c75;
-	width: 60%;
-	margin: 0 auto;
-	text-align: center;
-	font-family: "Arial", "sans-serif";
-	/* text-transform: uppercase; */
-	display:grid
-	  }
-
-
-.profile-box table {
-width: 80%;
-text-align: center;
-}
-
-table {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-left: auto;
-  margin-right: auto;
-	
-  }
-
-  /*table, th, td {
-	border: 1px solid;
-	
-  }*/
-
-  .profile-pb {
-	margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
-	text-decoration: none;
-	font-size: 1.6em;
-	font-weight: 600;
-	width: 60%;
-	margin: 0 auto;
-	text-align: center;
-	font-family: "Arial", "sans-serif";
-	/* text-transform: uppercase; */
-	padding-bottom: 5px;
-  }
-
-.profile-box th{
-	font-family: Arial, Helvetica, sans-serif;
-	
-}
-
-.profile-event {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 500;
-	text-align: left;
-	font-size: 1em;
-	color: #676c75;
-	
-}
-
-.profile-meet {
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: left;
-	font-size: 0.6em;
-	color: grey;
-}
-
-.countdown {
-	background-color: #d5d8e0;
-	text-align: center;
-	font-family: "Arial", "sans-serif";
-	display:grid;
-}
-
-.timer {
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
-	font-size: 1.5em;
-	margin-top: 0px;
-	padding: 0;
-	padding-top: 15px;
-	text-decoration: none;
-	font-size: 1.6em;	
-	font-weight: 600;
-	color: #4365b4;
-	width: 60%;
-	margin: 0 auto;
-}
-
-.countdown-title {
-	text-decoration: none;
-	font-size: 0.8em;
-	padding: 0;
-	text-transform: uppercase;
-}
-
-.countdown-message {
-	padding: 0;
-	text-decoration: none;
-	font-size: 1em;	
-	font-weight: 300;
-	color: #676c75;
-}
-
-.countdown-logo {
-	width: 50%;
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-	
-  }
-
-  .profile {
-	max-width: 60%;
-	border: 1px solid #4365b4;
-	margin-left: auto;
-  	margin-right: auto;
-	border-radius: 20px;
-	padding-top: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
 /* Marketing Miks CV / Resume CSS */
+
+/* For teeny screens */
+@media screen and (min-width: 279px) and (max-width: 379px)
+{
+
+	.marketing-miks-intro{
+		width: 55%;
+		padding-left: 10%;
+		padding-bottom: 10%;
+		position: absolute;
+		bottom: 0;
+		left:0;
+		top: 35%;
+		
+	}
+
+	.marketing-miks-intro h2{
+		color: white;
+		font-size: 145%;
+		text-shadow: 2px 2px 2px black;
+		padding-bottom: 0px;
+		margin-bottom: 2px;
+
+		color: #fff;
+		
+
+	}
+	.marketing-miks-intro p {
+
+		color: white;
+		font-size: 75%;
+		text-shadow: 2px 2px 2px black;
+		padding-top: 0px;
+		margin-top: 5px;
+}
+
+.marketing-miks-intro button {
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	font-size: 0.6em;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-left: 6px;
+	height: 30px; 
+	width: 55%;
+	text-transform:uppercase;
+	margin-top: 8px;
+	}
+
+	.marketing-miks-intro button:hover {
+	border: 2px solid white;
+	background-color: white;
+	color: black;
+	font-size: 0.6em;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-left: 6px;
+	height: 30px; 
+	text-transform:uppercase;
+	}
+
+}
+
+	/* For tiny screens */
+@media screen and (min-width: 380px) and (max-width: 500px)
+{
+
+	.marketing-miks-intro{
+		width: 55%;
+		padding-left: 10%;
+		padding-bottom: 10%;
+		position: absolute;
+		bottom: 0;
+		left:0;
+		top: 33%;
+	}
+
+	.marketing-miks-intro h2{
+		color: white;
+		font-size: 160%;
+		text-shadow: 2px 2px 2px black;
+		padding-bottom: 0px;
+		margin-bottom: 2px;
+
+	}
+	.marketing-miks-intro p {
+		color: white;
+		font-size: 100%;
+		text-shadow: 2px 2px 2px black;
+		padding-top: 0px;
+		margin-top: 5px;
+	}
+	.marketing-miks-intro button {
+		border: 1px solid white;
+		background-color: transparent;
+		color: white;
+		font-size: 0.8em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 60%;
+		text-transform:uppercase;
+		margin-top: 10px;
+		}
+	
+		.marketing-miks-intro button:hover {
+		border: 2px solid white;
+		background-color: white;
+		color: black;
+		font-size: 0.8em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		text-transform:uppercase;
+		}
+}
+
+
+/* For small screens */
+@media screen and (min-width: 501px) and (max-width: 768px)
+{
+	.marketing-miks-intro{
+		width: 40%;
+		padding-left: 10%;
+		padding-bottom: 10%;
+		position: absolute;
+		bottom: 0;
+		left:0;
+		top: 25%;
+	}
+
+	.marketing-miks-intro h2{
+		color: white;
+		font-size: 210%;
+		text-shadow: 2px 2px 2px black;
+		padding-bottom: 0px;
+		margin-bottom: 2px;
+
+	}
+	.marketing-miks-intro p {
+		color: white;
+		font-size: 110%;
+		text-shadow: 2px 2px 2px black;
+		padding-top: 0px;
+		margin-top: 5px;
+	}
+	.marketing-miks-intro button {
+		border: 1px solid white;
+		background-color: transparent;
+		color: white;
+		font-size: 0.8em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 55%;
+		text-transform:uppercase;
+		margin-top: 12px;
+		}
+	
+		.marketing-miks-intro button:hover {
+		border: 2px solid white;
+		background-color: white;
+		color: black;
+		font-size: 0.8em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		text-transform:uppercase;
+		}
+}
+
+
+/* For medium screens */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    
+		.marketing-miks-intro{
+			width: 50%;
+			padding-left: 10%;
+			padding-bottom: 10%;
+			position: absolute;
+			bottom: 0;
+			left:0;
+			top: 37%;
+		}
+	
+		.marketing-miks-intro h2{
+			color: white;
+			font-size: 240%;
+			text-shadow: 2px 2px 2px black;
+			padding-bottom: 0px;
+			margin-bottom: 2px;
+	
+		}
+		.marketing-miks-intro p {
+			color: white;
+			font-size: 140%;
+			text-shadow: 2px 2px 2px black;
+			padding-top: 0px;
+			margin-top: 5px;
+		}
+		.marketing-miks-intro button {
+			border: 1px solid white;
+			background-color: transparent;
+			color: white;
+			font-size: 0.8em;
+			padding-bottom: 6px;
+			padding-top: 6px;
+			padding-right: 6px;
+			padding-left: 6px;
+			height: 30px; 
+			width: 40%;
+			text-transform:uppercase;
+			margin-top: 12px;
+			}
+		
+			.marketing-miks-intro button:hover {
+			border: 2px solid white;
+			background-color: white;
+			color: black;
+			font-size: 0.8em;
+			padding-bottom: 6px;
+			padding-top: 6px;
+			padding-right: 6px;
+			padding-left: 6px;
+			height: 30px; 
+			text-transform:uppercase;
+			}
+}
+
+/* For larger screens */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+	.marketing-miks-intro{
+		width: 40%;
+		padding-left: 10%;
+		padding-bottom: 10%;
+		position: absolute;
+		bottom: 0;
+		left:0;
+		top: 50%;
+	}
+
+	.marketing-miks-intro h2{
+		color: white;
+		font-size: 280%;
+		text-shadow: 2px 2px 2px black;
+		padding-bottom: 0px;
+		margin-bottom: 2px;
+
+	}
+	.marketing-miks-intro p {
+		color: white;
+		font-size: 140%;
+		text-shadow: 2px 2px 2px black;
+		padding-top: 0px;
+		margin-top: 5px;
+	}
+	.marketing-miks-intro button {
+		border: 1px solid white;
+		background-color: transparent;
+		color: white;
+		font-size: 1em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 40%;
+		text-transform:uppercase;
+		margin-top: 12px;
+		}
+	
+		.marketing-miks-intro button:hover {
+		border: 2px solid white;
+		background-color: white;
+		color: black;
+		font-size: 1em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		text-transform:uppercase;
+		}
+
+}
+
+/* For much larger screens */
+@media screen and (min-width: 1440px) {
+
+	.marketing-miks-intro{
+		width: 40%;
+		padding-left: 10%;
+		padding-bottom: 10%;
+		position: absolute;
+		bottom: 0;
+		left:0;
+		top: 50%;
+	}
+
+	.marketing-miks-intro h2{
+		color: white;
+		font-size: 340%;
+		text-shadow: 2px 2px 2px black;
+		padding-bottom: 0px;
+		margin-bottom: 2px;
+
+	}
+	.marketing-miks-intro p {
+		color: white;
+		font-size: 180%;
+		text-shadow: 2px 2px 2px black;
+		padding-top: 0px;
+		margin-top: 5px;
+	}
+	.marketing-miks-intro button {
+		border: 1px solid white;
+		background-color: transparent;
+		color: white;
+		font-size: 1em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		width: 30%;
+		text-transform:uppercase;
+		margin-top: 18px;
+		}
+	
+		.marketing-miks-intro button:hover {
+		border: 2px solid white;
+		background-color: white;
+		color: black;
+		font-size: 1em;
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-left: 6px;
+		height: 30px; 
+		text-transform:uppercase;
+		}
+
+}
 
 .resume {
 	padding-bottom: 0px;
@@ -678,7 +755,6 @@ table {
 	font-style: normal;
 	color: #676c75;
 	text-shadow: none;
-	font-family: 'Impact', sans-serif;
 	box-sizing: border-box;
   }
   
@@ -813,7 +889,6 @@ table {
 
 h1 {
   text-transform: uppercase;
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
   color: white;
   font-size: 3em;
   text-align: center;
@@ -940,7 +1015,6 @@ h1 {
 	font-style: normal;
 	color: #676c75;
 	text-shadow: none;
-	font-family: 'Impact', sans-serif;
 	box-sizing: border-box;
   }
   
@@ -1016,17 +1090,6 @@ h1 {
   z-index: 2;
 }
 
-h1 {
-  text-transform: uppercase;
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
-  color: white;
-  font-size: 3em;
-  text-align: center;
-  padding-bottom: 20px; /* Add some space between h1 and timeline-container */
-  padding-top: 20px;
-  margin: 0;
-  display: contents;
-}
 
 .drawings img {
 	max-width: 60%;
@@ -1067,356 +1130,3 @@ h1 {
 	}
 }
 
-/* For teeny screens */
-@media screen and (min-width: 279px) and (max-width: 379px)
-{
-
-	.marketing-miks-intro{
-		width: 55%;
-		padding-left: 10%;
-		padding-bottom: 10%;
-		position: absolute;
-		bottom: 0;
-		left:0;
-		top: 35%;
-		
-	}
-
-	.marketing-miks-intro h2{
-		font-size: 145%;
-		text-shadow: 2px 2px 2px black;
-		padding-bottom: 0px;
-		margin-bottom: 2px;
-		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-		color: #fff;
-		
-
-	}
-	.marketing-miks-intro p {
-		font-family: "Arial", "sans-serif";
-		color: white;
-		font-size: 85%;
-		text-shadow: 2px 2px 2px black;
-		padding-top: 0px;
-		margin-top: 5px;
-}
-
-.marketing-miks-intro button {
-	border: 1px solid white;
-	background-color: transparent;
-	color: white;
-	font-size: 0.6em;
-	padding-bottom: 6px;
-	padding-top: 6px;
-	padding-right: 6px;
-	padding-left: 6px;
-	height: 30px; 
-	width: 55%;
-	text-transform:uppercase;
-	margin-top: 8px;
-	}
-
-	.marketing-miks-intro button:hover {
-	border: 2px solid white;
-	background-color: white;
-	color: black;
-	font-size: 0.6em;
-	padding-bottom: 6px;
-	padding-top: 6px;
-	padding-right: 6px;
-	padding-left: 6px;
-	height: 30px; 
-	text-transform:uppercase;
-	}
-
-}
-
-	/* For tiny screens */
-@media screen and (min-width: 380px) and (max-width: 500px)
-{
-
-	.marketing-miks-intro{
-		width: 55%;
-		padding-left: 10%;
-		padding-bottom: 10%;
-		position: absolute;
-		bottom: 0;
-		left:0;
-		top: 33%;
-	}
-
-	.marketing-miks-intro h2{
-		font-size: 160%;
-		text-shadow: 2px 2px 2px black;
-		padding-bottom: 0px;
-		margin-bottom: 2px;
-
-	}
-	.marketing-miks-intro p {
-		font-family: "Arial", "sans-serif";
-		color: white;
-		font-size: 100%;
-		text-shadow: 2px 2px 2px black;
-		padding-top: 0px;
-		margin-top: 5px;
-	}
-	.marketing-miks-intro button {
-		border: 1px solid white;
-		background-color: transparent;
-		color: white;
-		font-size: 0.8em;
-		padding-bottom: 6px;
-		padding-top: 6px;
-		padding-right: 6px;
-		padding-left: 6px;
-		height: 30px; 
-		width: 60%;
-		text-transform:uppercase;
-		margin-top: 10px;
-		}
-	
-		.marketing-miks-intro button:hover {
-		border: 2px solid white;
-		background-color: white;
-		color: black;
-		font-size: 0.8em;
-		padding-bottom: 6px;
-		padding-top: 6px;
-		padding-right: 6px;
-		padding-left: 6px;
-		height: 30px; 
-		text-transform:uppercase;
-		}
-}
-
-
-/* For small screens */
-@media screen and (min-width: 501px) and (max-width: 768px)
-{
-	.marketing-miks-intro{
-		width: 40%;
-		padding-left: 10%;
-		padding-bottom: 10%;
-		position: absolute;
-		bottom: 0;
-		left:0;
-		top: 25%;
-	}
-
-	.marketing-miks-intro h2{
-		font-size: 210%;
-		text-shadow: 2px 2px 2px black;
-		padding-bottom: 0px;
-		margin-bottom: 2px;
-
-	}
-	.marketing-miks-intro p {
-		font-family: "Arial", "sans-serif";
-		color: white;
-		font-size: 130%;
-		text-shadow: 2px 2px 2px black;
-		padding-top: 0px;
-		margin-top: 5px;
-	}
-	.marketing-miks-intro button {
-		border: 1px solid white;
-		background-color: transparent;
-		color: white;
-		font-size: 0.8em;
-		padding-bottom: 6px;
-		padding-top: 6px;
-		padding-right: 6px;
-		padding-left: 6px;
-		height: 30px; 
-		width: 55%;
-		text-transform:uppercase;
-		margin-top: 12px;
-		}
-	
-		.marketing-miks-intro button:hover {
-		border: 2px solid white;
-		background-color: white;
-		color: black;
-		font-size: 0.8em;
-		padding-bottom: 6px;
-		padding-top: 6px;
-		padding-right: 6px;
-		padding-left: 6px;
-		height: 30px; 
-		text-transform:uppercase;
-		}
-}
-
-
-/* For medium screens */
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-    
-		.marketing-miks-intro{
-			width: 50%;
-			padding-left: 10%;
-			padding-bottom: 10%;
-			position: absolute;
-			bottom: 0;
-			left:0;
-			top: 37%;
-		}
-	
-		.marketing-miks-intro h2{
-			font-size: 240%;
-			text-shadow: 2px 2px 2px black;
-			padding-bottom: 0px;
-			margin-bottom: 2px;
-	
-		}
-		.marketing-miks-intro p {
-			font-family: "Arial", "sans-serif";
-			color: white;
-			font-size: 140%;
-			text-shadow: 2px 2px 2px black;
-			padding-top: 0px;
-			margin-top: 5px;
-		}
-		.marketing-miks-intro button {
-			border: 1px solid white;
-			background-color: transparent;
-			color: white;
-			font-size: 0.8em;
-			padding-bottom: 6px;
-			padding-top: 6px;
-			padding-right: 6px;
-			padding-left: 6px;
-			height: 30px; 
-			width: 40%;
-			text-transform:uppercase;
-			margin-top: 12px;
-			}
-		
-			.marketing-miks-intro button:hover {
-			border: 2px solid white;
-			background-color: white;
-			color: black;
-			font-size: 0.8em;
-			padding-bottom: 6px;
-			padding-top: 6px;
-			padding-right: 6px;
-			padding-left: 6px;
-			height: 30px; 
-			text-transform:uppercase;
-			}
-}
-
-/* For larger screens */
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-
-	.marketing-miks-intro{
-		width: 40%;
-		padding-left: 10%;
-		padding-bottom: 10%;
-		position: absolute;
-		bottom: 0;
-		left:0;
-		top: 50%;
-	}
-
-	.marketing-miks-intro h2{
-		font-size: 280%;
-		text-shadow: 2px 2px 2px black;
-		padding-bottom: 0px;
-		margin-bottom: 2px;
-
-	}
-	.marketing-miks-intro p {
-		font-family: "Arial", "sans-serif";
-		color: white;
-		font-size: 140%;
-		text-shadow: 2px 2px 2px black;
-		padding-top: 0px;
-		margin-top: 5px;
-	}
-	.marketing-miks-intro button {
-		border: 1px solid white;
-		background-color: transparent;
-		color: white;
-		font-size: 1em;
-		padding-bottom: 6px;
-		padding-top: 6px;
-		padding-right: 6px;
-		padding-left: 6px;
-		height: 30px; 
-		width: 40%;
-		text-transform:uppercase;
-		margin-top: 12px;
-		}
-	
-		.marketing-miks-intro button:hover {
-		border: 2px solid white;
-		background-color: white;
-		color: black;
-		font-size: 1em;
-		padding-bottom: 6px;
-		padding-top: 6px;
-		padding-right: 6px;
-		padding-left: 6px;
-		height: 30px; 
-		text-transform:uppercase;
-		}
-
-}
-
-/* For much larger screens */
-@media screen and (min-width: 1440px) {
-
-	.marketing-miks-intro{
-		width: 40%;
-		padding-left: 10%;
-		padding-bottom: 10%;
-		position: absolute;
-		bottom: 0;
-		left:0;
-		top: 50%;
-	}
-
-	.marketing-miks-intro h2{
-		font-size: 340%;
-		text-shadow: 2px 2px 2px black;
-		padding-bottom: 0px;
-		margin-bottom: 2px;
-
-	}
-	.marketing-miks-intro p {
-		font-family: "Arial", "sans-serif";
-		color: white;
-		font-size: 180%;
-		text-shadow: 2px 2px 2px black;
-		padding-top: 0px;
-		margin-top: 5px;
-	}
-	.marketing-miks-intro button {
-		border: 1px solid white;
-		background-color: transparent;
-		color: white;
-		font-size: 1em;
-		padding-bottom: 6px;
-		padding-top: 6px;
-		padding-right: 6px;
-		padding-left: 6px;
-		height: 30px; 
-		width: 30%;
-		text-transform:uppercase;
-		margin-top: 18px;
-		}
-	
-		.marketing-miks-intro button:hover {
-		border: 2px solid white;
-		background-color: white;
-		color: black;
-		font-size: 1em;
-		padding-bottom: 6px;
-		padding-top: 6px;
-		padding-right: 6px;
-		padding-left: 6px;
-		height: 30px; 
-		text-transform:uppercase;
-		}
-
-}
