@@ -171,7 +171,7 @@ background: #fff;
   position: fixed;
   top: 63px; /* Adjust based on your header's height */
   background-color: #676c75; /* Change this to your preferred background color */
-width: 40%;
+width: 45%;
   transition: transform 0.3s ease-in-out;
   z-index: 1000; /* Ensure menu is above other content */
 	 align-items: flex-end;
@@ -244,11 +244,11 @@ footer {
 opacity: 0.5;
 }
 
-/* Marketing Miks CV CSS */
+/* Marketing Miks Main Page CSS */
 
 .marketing-miks-header {
 	background-image: url('marketing-miks-main-image.jpg');
-	position: relative;
+	background-position: 70%;
 	background-size: cover;
 }
 
