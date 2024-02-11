@@ -87,3 +87,25 @@ function toggleArrows() {
 toggleArrows(); // Call the function initially
 
 window.addEventListener('resize', toggleArrows); // Update arrow visibility on window resize
+
+const carouselContainer = document.querySelector('.carousel-container');
+  let touchStartX = 0;
+  let touchEndX = 0;
+  const swipeThreshold = 100; // Minimum distance to consider as a swipe
+
+  carouselContainer.addEventListener('touchstart', function(event) {
+    touchStartX = event.touches[0].clientX;
+  });
+
+  carouselContainer.addEventListener('touchmove', function(event) {
+    touchEndX = event.touches[0].clientX;
+  });
+
+  carouselContainer.addEventListener('touchend', function(event) {
+    const deltaX = touchEndX - touchStartX;
+    if (deltaX > swipeThreshold) {
+      prevSlide();
+    } else if (deltaX < -swipeThreshold) {
+      nextSlide();
+    }
+  });
