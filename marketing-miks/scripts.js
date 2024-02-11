@@ -38,49 +38,52 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// JavaScript for carousel navigation
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-item');
+const totalSlides = slides.length;
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
 
-// Set the date we're counting down to
-var countDownDate = new Date("Sep 13, 2025 00:00:00").getTime();
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    if (i >= index && i < index + 3) { // Display three items at a time
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+function nextSlide() {
+  console.log("Next slide clicked");
+  currentSlide = (currentSlide + 1) % totalSlides;
+  console.log("Current slide:", currentSlide);
+  showSlide(currentSlide);
+}
 
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Gunning for gold";
-  }
-}, 1000);
+function prevSlide() {
+  console.log("Previous slide clicked");
+  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  console.log("Current slide:", currentSlide);
+  showSlide(currentSlide);
+}
 
-// scripts.js
 
-function toggleReadMore(index) {
-  var jobContainer = document.getElementById('job-container-' + index);
-  var readMoreButton = document.getElementsByClassName('open-read-more')[index];
+// Show the first three slides initially
+showSlide(currentSlide);
 
-  if (jobContainer.classList.contains('hidden')) {
-    // If job container is hidden, show it and change button text to up arrow
-    jobContainer.classList.remove('hidden');
-    readMoreButton.innerHTML = '&uarr;';
+// Hide navigation arrows if three items are visible on larger screens
+function toggleArrows() {
+  if (window.matchMedia("(min-width: 1024px)").matches && totalSlides === 3) {
+    prevButton.style.display = 'none';
+    nextButton.style.display = 'none';
   } else {
-    // If job container is visible, hide it and change button text to down arrow
-    jobContainer.classList.add('hidden');
-    readMoreButton.innerHTML = '&darr;';
+    prevButton.style.display = 'block';
+    nextButton.style.display = 'block';
   }
 }
+
+toggleArrows(); // Call the function initially
+
+window.addEventListener('resize', toggleArrows); // Update arrow visibility on window resize
