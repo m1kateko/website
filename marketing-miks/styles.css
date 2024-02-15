@@ -997,7 +997,7 @@ opacity: 0.5;
 	}
   }
 
-/* Start of project styles*/
+/* START OF PROJECT STYLES */
 
 .project-module {
     padding: 2% 0;
@@ -1046,7 +1046,6 @@ opacity: 0.5;
     transition: transform 0.5s ease;
 	margin: 0 auto;
 	padding: 1px;
-	width: auto;
 }
 
 .project {
@@ -1054,7 +1053,7 @@ opacity: 0.5;
  	/* Set a maximum width for each project */
     padding: 0 2%;
     padding-top: 8px;
-    border: 0.1px solid #676c75;
+    border: 1px solid #676c75;
     border-radius: 20px;
     display: flex; /* Allow centering of project content */
     flex-direction: column; /* Align content vertically */
@@ -1119,7 +1118,8 @@ opacity: 0.5;
 .project {
     width: 500px; /* Was 98% - Ensure each project takes up the full width of its container */
 }}
-/* End of project styles */
+
+/* END OF PROJECT STYLES */
 
 
   
