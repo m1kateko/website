@@ -1053,7 +1053,7 @@ opacity: 0.5;
  	/* Set a maximum width for each project */
     padding: 0 2%;
     padding-top: 8px;
-    border: 1px solid #676c75;
+    border: 1px solid #b7b8b9;
     border-radius: 20px;
     display: flex; /* Allow centering of project content */
     flex-direction: column; /* Align content vertically */
