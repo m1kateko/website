@@ -1039,8 +1039,8 @@ opacity: 0.5;
 }
 
 .project {
-    width: 98%; /* Ensure each project takes up the full width of its container */
- 	max-width: 350px;/* Set a maximum width for each project */
+    width: 300px; /* Was 98% - Ensure each project takes up the full width of its container */
+ 	/* Set a maximum width for each project */
     padding: 0 2%;
     padding-top: 8px;
     border: 0.1px solid #676c75;
@@ -1049,6 +1049,10 @@ opacity: 0.5;
     flex-direction: column; /* Align content vertically */
     align-items: left; /* Center content horizontally */
 	margin: 0 auto;
+}
+
+.project:hover {
+	opacity: 0.8;
 }
 
 .project-img {

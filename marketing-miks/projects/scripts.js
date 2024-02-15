@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// Filteing projects
 document.addEventListener('DOMContentLoaded', function() {
   const filter = document.getElementById('filter');
   const projects = document.querySelectorAll('.project');
