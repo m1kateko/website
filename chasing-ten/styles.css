@@ -1009,18 +1009,25 @@ display: block;
 
 
   .video-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 aspect ratio */
-	height: 0;
-	margin: 0 auto;
-  }
-  
-  .video-container iframe {
-	position: absolute;
-	top: 0;
-	width: 90%;
-	height: 100%;
-  }
+    position: relative;
+    width: 100%; /* Default width */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    margin: 0 auto; /* Center the container */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Default width */
+    height: 100%;
+}
+
+/* Media query for medium-sized screens */
+@media screen and (min-width: 768px) {
+    .video-container {
+        width: 50%; /* Adjusted width for medium-sized screens */
+        padding-bottom: 28.125%; /* Adjusted aspect ratio for medium-sized screens */
+    }
+}
