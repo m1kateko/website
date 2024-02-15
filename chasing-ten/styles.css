@@ -152,7 +152,7 @@ nav .logo img {
 
 .menu li {
   margin-right: 20px;
-font-size: 0.9em;
+font-size: 1.2em;
 
 }
 
@@ -165,11 +165,11 @@ font-size: 0.9em;
 }
 
 .menu li a:hover {
-  color: #4365b4;
-	border-radius: 25px;
-background: #fff;
-	padding: 10px;
-}
+	color: #4365b4;
+	  border-radius: 25px;
+  background: #fff;
+	  padding: 10px;
+  }
 
 /* Responsive design for smaller screens */
 
@@ -180,7 +180,7 @@ background: #fff;
   position: fixed;
   top: 63px; /* Adjust based on your header's height */
   background-color: #4365b4; /* Change this to your preferred background color */
-width: 40%;
+width: 45%;
   transition: transform 0.3s ease-in-out;
   z-index: 1000; /* Ensure menu is above other content */
 	 align-items: flex-end;
@@ -212,7 +212,7 @@ width: 40%;
 	.menu li {
     margin: 5px 0; /* Add margin to create space between items */
     padding: 5px; /* Add padding for internal spacing */
-	
+	font-size: 0.9em;
 
   }
 	.menu {
@@ -1004,4 +1004,23 @@ display: block;
 	caption {
 	  font-size: 1em;
 	}
+  }
+
+
+
+  .video-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	height: 0;
+	margin: 0 auto;
+  }
+  
+  .video-container iframe {
+	position: absolute;
+	top: 0;
+	width: 90%;
+	height: 100%;
   }
