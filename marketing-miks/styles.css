@@ -1059,6 +1059,7 @@ opacity: 0.5;
     flex-direction: column; /* Align content vertically */
     align-items: left; /* Center content horizontally */
 	margin: 0 auto;
+	z-index: 10;
 }
 
 .project:hover {
