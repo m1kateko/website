@@ -841,7 +841,8 @@ opacity: 0.5;
 	position: relative;
 }
 
-/* Base styles */
+/* START OF CAROUSEL STYLES */
+
 .work-carousel {
 	padding: 2% 0;
 	background-color: #fff;
@@ -869,7 +870,6 @@ opacity: 0.5;
   }
   
   .work-carousel button:hover {
-	border: 2px solid #676c75;
 	background-color: #676c75;
 	color: white;
   }
@@ -882,6 +882,7 @@ opacity: 0.5;
     justify-content: center; /* Horizontally center the grid container */
 	padding: 4%;
 	padding-bottom: 0%;
+	padding-top: 1%;
   }
   
   .carousel {
@@ -939,63 +940,61 @@ opacity: 0.5;
   .carousel-item button:hover {
 	margin-top: 0;
   }
+
+/* For mobile devices */
+@media (max-width: 767px) {
+	.carousel {
+	  display: flex;
+	  flex-wrap: nowrap; /* Ensure items are in a single row */
+	  overflow-x: auto; /* Enable horizontal scrolling */
+	  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+	  scroll-snap-type: x mandatory; /* Enable snapping to items */
+	}
   
-  /* Responsive styles */
-  .carousel-container {
-	position: relative;
+	.carousel-item {
+	  flex: 0 0 auto;
+	  width: 80%; /* Adjust width to fit one item in view */
+	  margin: 0 10px; /* Adjust margin for spacing */
+	  scroll-snap-align: start; /* Ensure items snap to start */
+	}
   }
   
-  .carousel-navigation {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+/* For medium width devices */
+@media (min-width: 768px) and (max-width: 991px) {
+	.carousel {
+	  display: flex;
+	  flex-wrap: nowrap; /* Ensure items are in a single row */
+	  overflow-x: auto; /* Enable horizontal scrolling */
+	  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+	  scroll-snap-type: x mandatory; /* Enable snapping to items */
+	}
+  
+	.carousel-item {
+	  flex: 0 0 auto;
+	  width: 45%; /* Adjust width to fit two items in view */
+	  margin: 0 10px; /* Adjust margin for spacing */
+	  scroll-snap-align: start; /* Ensure items snap to start */
+	}
+  }
+
+  /* For larger width devices - three items in view */
+
+  @media (min-width: 992px){ 
+  .carousel {
 	display: flex;
-	justify-content: space-between;
-	width: 100%;
+	justify-content: center; /* Center the carousel horizontally */
+	transition: transform 0.5s ease;
   }
-  
-  .carousel-navigation button {
-	background: none;
-	background-color: black;
-	border: none;
-	border-radius: 10%;
-	color: #fff;
-	font-size: 1em;
-	cursor: pointer;
-	transition: color 0.3s ease;
-  }
-  
-  .carousel-navigation button:hover {
-	color: #fff;
-  }
- 
-  @media screen and (max-width: 1023px) {
-	.carousel-item {
-	  width: calc(50% - 20px);
-	  max-width: calc(50% - 20px);
-	}
-  }
-  
-  @media screen and (max-width: 767px) {
-	.carousel-item {
-	  width: calc(100% - 20px);
-	  max-width: calc(100% - 20px);
-	}
-  }
-  
-  @media screen and (min-width: 768px) {
-	.carousel-item {
-	  width: calc(50% - 20px);
-	  max-width: calc(50% - 20px);
-	}
-  }
-  
-  @media screen and (min-width: 1024px) {
-	.carousel-item {
-	  width: calc(33.333% - 20px);
-	  max-width: calc(33.333% - 20px);
-	}
-  }
+}
+
+  /* For largest width devices - also three items in view */
+
+@media (min-width: 1800px){ 
+.carousel-item {
+	width: 500px;}  
+}
+
+/* END OF CAROUSEL STYLES */
 
 /* START OF PROJECT STYLES */
 
@@ -1143,6 +1142,17 @@ opacity: 0.5;
 	color: #fff;
 	text-align: center;
 	position: relative;
+}
+
+.about-headings button{
+	font-size: 1em;
+	padding: 6px;
+	height: auto;
+	width: auto;
+}
+
+.about-headings button:hover{
+	color: #676c75;
 }
 
 .current-read-headings {
