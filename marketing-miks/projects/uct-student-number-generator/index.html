@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCT student number generator</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+  <nav>
+    <div class="logo">
+      <a href="/index.html"><img src="./mikateko-main-site-logo-white.png" alt="Mikateko Main Site Logo"></a>
+    </div>
+    <div class="menu-icon">
+  <img src="./mikateko-main-site-menu-icon-white.png" alt="Menu Icon" class="menu-open-icon">
+  <img src="./mikateko-main-site-menu-icon-close-white.png" alt="Close Icon" class="menu-close-icon">
+</div>
+    <ul class="menu">
+      <li><a href="../">Marketing Miks</a></li>
+      <li><a href="/marketing-miks/cv/">CV</a></li>
+      <li><a href="../">Projects</a></li>
+      <li><a href="/chasing-ten/">Chasing Ten&nbsp;<i class="fa fa-external-link"></i></a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<div class="project-showcase">
+  <h2>UCT student number generator</h2>
+  <div class="showcase-study">
+  <p><span class="showcase-span">Date: </span>June 2023</p>
+  <p><span class="showcase-span">Client </span>University of Cape Town</p>
+  <p><span class="showcase-span">Brief: </span>Originally a Python program, this challenge revolved 
+  around creating a visual interface with inputs and logic. This was aimed at determining what a UCT 
+   applicant's student number would be.</p>
+  <p><span class="showcase-span">Application: </span>I created a form using HTML, CSS and JavaScript. The
+    JavaScript was for the logic and computing the form submission. The first names had to be stripped of vowels,
+    and then takes its first three valid letters as well as the first three of the surname. The concatenation
+    ends with the three digit number to complete the student number.</p>
+  <p><span class="showcase-span">Project: </span><a href="#showcase">UCT student number generator&nbsp;<i class="fa fa-external-link"></i></a></p>
+
+</div>
+  <div id="#showcase" class="showcase-container uct-student-number-generator">
+    <div class="uct-student-number-generator">
+      <div id="centrePiece" class="centrePiece" width="500">
+        <div id ="centrePieceChild" width="300">
+      <p><img src="./University_of_Cape_Town_logo.png"  alt=""/></p>
+      <h1> <strong>UCT student number generator</strong></h1>
+      <form id="form1" name="form1" method="post">
+      <label for="textfield">First name:</label>
+      
+      <input name="firstName" type="text" required="required" id="firstName" autocomplete="off" form="form1" placeholder="Enter your first name" align="left">
+      <br>
+        <br>
+      <label for="textfield2">Surname:</label>
+      <input name="lastName" type="text" required="required" id="lastName" autocomplete="off" form="form1" placeholder="Enter your surname" align="left">
+      <br>
+        <br>
+      <button type="button" class="myButton" id="myButton">SUBMIT</button>
+      <button type="button" class="clearButton" id="clearButton" onClick="window.location.reload();">CLEAR</button>
+      </form>
+          </div>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="studentNumberOutput">Output here</p>
+        </div>
+      </div>
+      <script src="UCT-Form.js"></script>
+      <!-- Replace these with your actual project items -->
+    </div>
+      <!-- Add more carousel items as needed -->
+    </div>
+ 
+</div>
+<div class="showcase-button">
+  <a href="../"><button>Back to projects</button></a>
+  </div>
+<footer>
+  <div class="social-icons">
+    <!-- Social media icons -->
+    <a href="http://youtube.com/@mikateko" target="_blank"><img src="../social-youtube-grey.png" alt="YouTube"></a>
+    <a href="http://tiktok.com/@m1kateko" target="_blank"><img src="../social-tiktok-grey.png" alt="TikTok"></a>
+    <a href="http://instagram.com/m1kateko" target="_blank"><img src="../social-ig-grey.png" alt="Instagram"></a>
+    <a href="http://linkedin.com/in/mikateko" target="_blank"><img src="../social-linkedin-grey.png" alt="LinkedIn"></a>
+    <a href="http://x.com/m1kateko" target="_blank"><img src="../social-x-grey.png" alt="X"></a>
+  </div>
+    <div class="footer-logo">
+    <!-- Site logo -->
+   <a href="/"><img src="../mikateko-main-site-logo-white.png" alt="Mikateko Main Site Footer Logo" class="footer-site-logo"></a>
+  </div>
+  <p>Mikateko Makaringe © 2024. All rights reserved.</p>
+</footer>
+<script src="./scripts.js"></script>
+</body>
+</html>

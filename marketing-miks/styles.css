@@ -636,7 +636,7 @@ opacity: 0.5;
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	box-sizing: border-box;
   }
   
@@ -899,8 +899,14 @@ opacity: 0.5;
 	padding-top: 8px;
 	border: 1px solid #b7b8b9;
 	border-radius: 20px;
-	margin: 0 1% 10px;
-  }
+	margin: 0 1% 10px; 
+}
+
+.carousel-item a {
+	text-decoration: none;
+	color: black;
+}
+
 
   .carousel-item:hover {
 	opacity: 0.8;
@@ -1062,6 +1068,11 @@ opacity: 0.5;
 	margin: 0 auto;
 }
 
+.project a {
+	text-decoration: none;
+	color: black;
+}
+
 .project:hover {
 	opacity: 0.8;
 }
@@ -1087,6 +1098,7 @@ opacity: 0.5;
     background-color: #676c75;
     color: #fff;
     border-radius: 5px;
+	font-size: 0.9em;
 }
 
 .project button:hover {

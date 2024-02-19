@@ -10,16 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     menuIconOpen.style.display = 'block';
   }
 
-  // Function to toggle the menu
-  function toggleMenu() {
-    menu.classList.toggle('active');
-    menuIconOpen.style.display = menu.classList.contains('active') ? 'none' : 'block';
-    menuIconClose.style.display = menu.classList.contains('active') ? 'block' : 'none';
-  }
-
   // Event listener for opening the menu
   menuIconOpen.addEventListener('click', function() {
-    toggleMenu();
+    menu.classList.toggle('active');
+    menuIconOpen.style.display = 'none';
+    menuIconClose.style.display = 'block';
   });
 
   // Event listener for closing the menu when clicking outside
@@ -41,24 +36,22 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', function() {
     closeMenu();
   });
+});
 
-  // Event listener for closing the menu when a menu item is clicked
-  const menuItems = document.querySelectorAll('.menu li a');
-  menuItems.forEach(function(menuItem) {
-    menuItem.addEventListener('click', function() {
-      closeMenu();
+// Filteing projects
+document.addEventListener('DOMContentLoaded', function() {
+  const filter = document.getElementById('filter');
+  const projects = document.querySelectorAll('.project');
+
+  filter.addEventListener('change', function() {
+    const selectedFilter = filter.value;
+
+    projects.forEach(function(project) {
+      if (selectedFilter === 'all' || project.classList.contains(selectedFilter)) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
     });
-  });
-
-  // Event listener for pageshow event (when navigating back to the page)
-  window.addEventListener('pageshow', function(event) {
-    if (event.persisted) {
-      closeMenu();
-    }
-  });
-
-  // Event listener for popstate event (when navigating back using browser's back button)
-  window.addEventListener('popstate', function(event) {
-    closeMenu();
   });
 });
